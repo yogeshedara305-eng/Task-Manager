@@ -26,7 +26,7 @@ function displayfun(arr){
                     <h2 class="name">${ele.input.toUpperCase()}</h2>
                     <p class="privoty">Priority:${ele.optionvalue}</p>
                     <p class="status">Status:compeleted</p>
-                    <button class="compelete"  onclick="this.textContent = this.textContent === 'Complete' ? 'compeleted' : 'Complete'">Compelete</button>
+                    <button class="compelete"  onclick="this.textContent = this.textContent === 'Complete' ? 'compeleted' : 'Completed'">Compelete</button>
                     <button class="deletes" >Delete</button>
                 </div>
 
@@ -40,12 +40,9 @@ function displayfun(arr){
     ele.addEventListener('click',delfunction)
 
 })
-    
-  
+
+
 }
-
-
-
 
 function delfunction(e) {
     var del=document.querySelectorAll(".deletes")
