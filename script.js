@@ -11,7 +11,7 @@ function savefunction(e) {
         
     }
     arr.push(obj)
-
+    document.querySelector(".inputs").value = "";
    localStorage.setItem("items", JSON.stringify(arr));
    displayfun(arr)
 
@@ -46,6 +46,7 @@ function displayfun(arr){
 
 function delfunction(e) {
     var del=document.querySelectorAll(".deletes")
+    console.log(e.target)
 
     var index = Array.from(del).indexOf(e.target);
     console.log(index)
