@@ -1,6 +1,5 @@
 var addtask = document.querySelector(".btn").addEventListener("click", savefunction);
 var arr = JSON.parse(localStorage.getItem("items")) || [];
-
 function savefunction(e) {
     e.preventDefault();
     var input=document.querySelector(".inputs").value
